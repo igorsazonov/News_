@@ -7,14 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F728BF43248964610051D420 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728BF42248964610051D420 /* TopViewController.swift */; };
+		F728BF46248965AB0051D420 /* EntertainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728BF45248965AB0051D420 /* EntertainViewController.swift */; };
+		F728BF48248965C60051D420 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728BF47248965C60051D420 /* SportsViewController.swift */; };
+		F728BF4C248965F60051D420 /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728BF4B248965F60051D420 /* BusinessViewController.swift */; };
+		F728BF4E248966080051D420 /* TechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728BF4D248966080051D420 /* TechViewController.swift */; };
+		F728BF50248966200051D420 /* ScienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728BF4F248966200051D420 /* ScienceViewController.swift */; };
+		F728BF5724896A6C0051D420 /* Top.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728BF5624896A6C0051D420 /* Top.storyboard */; };
+		F728BF5924896A890051D420 /* Entertain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728BF5824896A890051D420 /* Entertain.storyboard */; };
+		F728BF5B24896A940051D420 /* Sports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728BF5A24896A940051D420 /* Sports.storyboard */; };
+		F728BF5F24896AB40051D420 /* Business.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728BF5E24896AB40051D420 /* Business.storyboard */; };
+		F728BF6124896ABE0051D420 /* Tech.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728BF6024896ABE0051D420 /* Tech.storyboard */; };
+		F728BF6324896ACE0051D420 /* Science.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728BF6224896ACE0051D420 /* Science.storyboard */; };
+		F728BF6724896E850051D420 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728BF6624896E850051D420 /* GeneralViewController.swift */; };
+		F728BF6924896EB60051D420 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728BF6824896EB60051D420 /* HealthViewController.swift */; };
+		F728BF6B24896EF50051D420 /* General.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728BF6A24896EF50051D420 /* General.storyboard */; };
+		F728BF6D24896F050051D420 /* Health.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728BF6C24896F050051D420 /* Health.storyboard */; };
+		F728BF6F248AAA190051D420 /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728BF6E248AAA190051D420 /* NewsFeedViewController.swift */; };
+		F728BF74248B87860051D420 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728BF73248B87860051D420 /* FavoritesViewController.swift */; };
+		F728BF76248B87A40051D420 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728BF75248B87A40051D420 /* SearchViewController.swift */; };
 		F7731041243F6159007CB5DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7731040243F6159007CB5DE /* AppDelegate.swift */; };
 		F7731043243F6159007CB5DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7731042243F6159007CB5DE /* SceneDelegate.swift */; };
-		F7731045243F6159007CB5DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7731044243F6159007CB5DE /* ViewController.swift */; };
 		F7731048243F6159007CB5DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7731046243F6159007CB5DE /* Main.storyboard */; };
 		F773104A243F615D007CB5DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7731049243F615D007CB5DE /* Assets.xcassets */; };
 		F773104D243F615D007CB5DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F773104B243F615D007CB5DE /* LaunchScreen.storyboard */; };
 		F7731058243F615D007CB5DE /* FreshNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7731057243F615D007CB5DE /* FreshNewsTests.swift */; };
 		F7731063243F615D007CB5DE /* FreshNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7731062243F615D007CB5DE /* FreshNewsUITests.swift */; };
+		F773107524407C16007CB5DE /* NewsFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F773107424407C16007CB5DE /* NewsFeed.storyboard */; };
+		F773107724407D6C007CB5DE /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F773107624407D6C007CB5DE /* Search.storyboard */; };
+		F7731079244083CB007CB5DE /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7731078244083CB007CB5DE /* Favorites.storyboard */; };
+		F773107B2440C5A6007CB5DE /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F773107A2440C5A6007CB5DE /* Article.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +57,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F728BF42248964610051D420 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		F728BF45248965AB0051D420 /* EntertainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntertainViewController.swift; sourceTree = "<group>"; };
+		F728BF47248965C60051D420 /* SportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
+		F728BF4B248965F60051D420 /* BusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
+		F728BF4D248966080051D420 /* TechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechViewController.swift; sourceTree = "<group>"; };
+		F728BF4F248966200051D420 /* ScienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceViewController.swift; sourceTree = "<group>"; };
+		F728BF5624896A6C0051D420 /* Top.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Top.storyboard; sourceTree = "<group>"; };
+		F728BF5824896A890051D420 /* Entertain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Entertain.storyboard; sourceTree = "<group>"; };
+		F728BF5A24896A940051D420 /* Sports.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sports.storyboard; sourceTree = "<group>"; };
+		F728BF5E24896AB40051D420 /* Business.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Business.storyboard; sourceTree = "<group>"; };
+		F728BF6024896ABE0051D420 /* Tech.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tech.storyboard; sourceTree = "<group>"; };
+		F728BF6224896ACE0051D420 /* Science.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Science.storyboard; sourceTree = "<group>"; };
+		F728BF6624896E850051D420 /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		F728BF6824896EB60051D420 /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
+		F728BF6A24896EF50051D420 /* General.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = General.storyboard; sourceTree = "<group>"; };
+		F728BF6C24896F050051D420 /* Health.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Health.storyboard; sourceTree = "<group>"; };
+		F728BF6E248AAA190051D420 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		F728BF73248B87860051D420 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		F728BF75248B87A40051D420 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F773103D243F6159007CB5DE /* FreshNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7731040243F6159007CB5DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7731042243F6159007CB5DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F7731044243F6159007CB5DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7731047243F6159007CB5DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7731049243F615D007CB5DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F773104C243F615D007CB5DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +89,10 @@
 		F773105E243F615D007CB5DE /* FreshNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreshNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7731062243F615D007CB5DE /* FreshNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshNewsUITests.swift; sourceTree = "<group>"; };
 		F7731064243F615D007CB5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F773107424407C16007CB5DE /* NewsFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsFeed.storyboard; sourceTree = "<group>"; };
+		F773107624407D6C007CB5DE /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		F7731078244083CB007CB5DE /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
+		F773107A2440C5A6007CB5DE /* Article.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Article.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +120,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F70D3671244B12030085FCF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F773107A2440C5A6007CB5DE /* Article.storyboard */,
+				F728BF71248B86080051D420 /* MainScreens */,
+				F728BF5524896A330051D420 /* Category */,
+				F728BF70248ABA3F0051D420 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F728BF44248964650051D420 /* Category  */ = {
+			isa = PBXGroup;
+			children = (
+				F728BF42248964610051D420 /* TopViewController.swift */,
+				F728BF45248965AB0051D420 /* EntertainViewController.swift */,
+				F728BF47248965C60051D420 /* SportsViewController.swift */,
+				F728BF6624896E850051D420 /* GeneralViewController.swift */,
+				F728BF4B248965F60051D420 /* BusinessViewController.swift */,
+				F728BF4D248966080051D420 /* TechViewController.swift */,
+				F728BF4F248966200051D420 /* ScienceViewController.swift */,
+				F728BF6824896EB60051D420 /* HealthViewController.swift */,
+			);
+			path = "Category ";
+			sourceTree = "<group>";
+		};
+		F728BF5524896A330051D420 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F728BF5624896A6C0051D420 /* Top.storyboard */,
+				F728BF5824896A890051D420 /* Entertain.storyboard */,
+				F728BF5A24896A940051D420 /* Sports.storyboard */,
+				F728BF6A24896EF50051D420 /* General.storyboard */,
+				F728BF5E24896AB40051D420 /* Business.storyboard */,
+				F728BF6024896ABE0051D420 /* Tech.storyboard */,
+				F728BF6224896ACE0051D420 /* Science.storyboard */,
+				F728BF6C24896F050051D420 /* Health.storyboard */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F728BF70248ABA3F0051D420 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F728BF71248B86080051D420 /* MainScreens */ = {
+			isa = PBXGroup;
+			children = (
+				F7731046243F6159007CB5DE /* Main.storyboard */,
+				F773107424407C16007CB5DE /* NewsFeed.storyboard */,
+				F7731078244083CB007CB5DE /* Favorites.storyboard */,
+				F773107624407D6C007CB5DE /* Search.storyboard */,
+			);
+			path = MainScreens;
+			sourceTree = "<group>";
+		};
+		F728BF72248B86DE0051D420 /* MainScreens */ = {
+			isa = PBXGroup;
+			children = (
+				F728BF6E248AAA190051D420 /* NewsFeedViewController.swift */,
+				F728BF73248B87860051D420 /* FavoritesViewController.swift */,
+				F728BF75248B87A40051D420 /* SearchViewController.swift */,
+			);
+			path = MainScreens;
+			sourceTree = "<group>";
+		};
+		F730A0C0244B85F700DBB058 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F728BF72248B86DE0051D420 /* MainScreens */,
+				F728BF44248964650051D420 /* Category  */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		F7731034243F6159007CB5DE = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +221,11 @@
 		F773103F243F6159007CB5DE /* FreshNews */ = {
 			isa = PBXGroup;
 			children = (
+				F773107C2440CCEE007CB5DE /* Model */,
+				F70D3671244B12030085FCF5 /* View */,
+				F730A0C0244B85F700DBB058 /* Controller */,
 				F7731040243F6159007CB5DE /* AppDelegate.swift */,
 				F7731042243F6159007CB5DE /* SceneDelegate.swift */,
-				F7731044243F6159007CB5DE /* ViewController.swift */,
-				F7731046243F6159007CB5DE /* Main.storyboard */,
 				F7731049243F615D007CB5DE /* Assets.xcassets */,
 				F773104B243F615D007CB5DE /* LaunchScreen.storyboard */,
 				F773104E243F615D007CB5DE /* Info.plist */,
@@ -126,6 +249,13 @@
 				F7731064243F615D007CB5DE /* Info.plist */,
 			);
 			path = FreshNewsUITests;
+			sourceTree = "<group>";
+		};
+		F773107C2440CCEE007CB5DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +362,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F728BF6124896ABE0051D420 /* Tech.storyboard in Resources */,
+				F728BF5724896A6C0051D420 /* Top.storyboard in Resources */,
+				F728BF5B24896A940051D420 /* Sports.storyboard in Resources */,
 				F773104D243F615D007CB5DE /* LaunchScreen.storyboard in Resources */,
 				F773104A243F615D007CB5DE /* Assets.xcassets in Resources */,
+				F773107B2440C5A6007CB5DE /* Article.storyboard in Resources */,
+				F728BF6D24896F050051D420 /* Health.storyboard in Resources */,
+				F7731079244083CB007CB5DE /* Favorites.storyboard in Resources */,
+				F728BF5924896A890051D420 /* Entertain.storyboard in Resources */,
 				F7731048243F6159007CB5DE /* Main.storyboard in Resources */,
+				F773107524407C16007CB5DE /* NewsFeed.storyboard in Resources */,
+				F728BF5F24896AB40051D420 /* Business.storyboard in Resources */,
+				F773107724407D6C007CB5DE /* Search.storyboard in Resources */,
+				F728BF6324896ACE0051D420 /* Science.storyboard in Resources */,
+				F728BF6B24896EF50051D420 /* General.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +401,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7731045243F6159007CB5DE /* ViewController.swift in Sources */,
+				F728BF4E248966080051D420 /* TechViewController.swift in Sources */,
 				F7731041243F6159007CB5DE /* AppDelegate.swift in Sources */,
+				F728BF6724896E850051D420 /* GeneralViewController.swift in Sources */,
+				F728BF4C248965F60051D420 /* BusinessViewController.swift in Sources */,
+				F728BF50248966200051D420 /* ScienceViewController.swift in Sources */,
+				F728BF46248965AB0051D420 /* EntertainViewController.swift in Sources */,
 				F7731043243F6159007CB5DE /* SceneDelegate.swift in Sources */,
+				F728BF48248965C60051D420 /* SportsViewController.swift in Sources */,
+				F728BF76248B87A40051D420 /* SearchViewController.swift in Sources */,
+				F728BF6924896EB60051D420 /* HealthViewController.swift in Sources */,
+				F728BF43248964610051D420 /* TopViewController.swift in Sources */,
+				F728BF74248B87860051D420 /* FavoritesViewController.swift in Sources */,
+				F728BF6F248AAA190051D420 /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

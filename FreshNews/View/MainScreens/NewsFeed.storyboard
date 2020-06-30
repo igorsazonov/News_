@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rGI-s4-gGd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News Feed View Controller-->
+        <scene sceneID="85l-Dy-8no">
+            <objects>
+                <viewController id="rGI-s4-gGd" customClass="NewsFeedViewController" customModule="FreshNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bLu-uB-Geo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhV-ZS-gsx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="35"/>
+                                <subviews>
+                                    <stackView contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="zAQ-uI-t7G">
+                                        <rect key="frame" x="0.0" y="0.0" width="900" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ek9-3Y-sq2">
+                                                <rect key="frame" x="8" y="0.0" width="102.5" height="35"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title=" Top">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXS-ku-6QG">
+                                                <rect key="frame" x="119.5" y="0.0" width="103" height="35"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title=" Entertain">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slX-5r-OVd" userLabel="Sports">
+                                                <rect key="frame" x="231.5" y="0.0" width="102.5" height="35"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title=" Sports">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faA-Wr-RUe">
+                                                <rect key="frame" x="343" y="0.0" width="102.5" height="35"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title=" General">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nj3-zp-reg">
+                                                <rect key="frame" x="454.5" y="0.0" width="102.5" height="35"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title=" Business">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I13-MS-8w1">
+                                                <rect key="frame" x="566" y="0.0" width="103" height="35"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title=" Tech">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwf-7X-H8M">
+                                                <rect key="frame" x="678" y="0.0" width="102.5" height="35"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title=" Science">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBZ-oo-Crc">
+                                                <rect key="frame" x="789.5" y="0.0" width="102.5" height="35"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="Health">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="900" id="Q4y-Jy-Hmd"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="8" bottom="0.0" right="8"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zAQ-uI-t7G" firstAttribute="centerY" secondItem="XhV-ZS-gsx" secondAttribute="centerY" id="HUt-6b-VCY"/>
+                                    <constraint firstItem="zAQ-uI-t7G" firstAttribute="leading" secondItem="XhV-ZS-gsx" secondAttribute="leading" id="Nas-cD-Tky"/>
+                                    <constraint firstAttribute="height" constant="35" id="WKY-he-ekZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="zAQ-uI-t7G" secondAttribute="bottom" id="d0L-Bn-Rne"/>
+                                    <constraint firstItem="zAQ-uI-t7G" firstAttribute="top" secondItem="XhV-ZS-gsx" secondAttribute="top" id="dKD-aO-srg"/>
+                                    <constraint firstAttribute="trailing" secondItem="zAQ-uI-t7G" secondAttribute="trailing" id="uNw-BS-ggE"/>
+                                </constraints>
+                            </scrollView>
+                            <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sof-lB-vxQ">
+                                <rect key="frame" x="0.0" y="87" width="414" height="726"/>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9J-7C-RrY">
+                                <rect key="frame" x="0.0" y="87" width="414" height="1"/>
+                                <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ASK-Ei-xyz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XhV-ZS-gsx" firstAttribute="top" secondItem="5QJ-QX-cs6" secondAttribute="top" id="0g0-5W-AD6"/>
+                            <constraint firstItem="h9J-7C-RrY" firstAttribute="top" secondItem="sof-lB-vxQ" secondAttribute="top" id="Ifi-Pw-g1i"/>
+                            <constraint firstItem="XhV-ZS-gsx" firstAttribute="leading" secondItem="5QJ-QX-cs6" secondAttribute="leading" id="MZQ-KR-wWW"/>
+                            <constraint firstItem="5QJ-QX-cs6" firstAttribute="trailing" secondItem="sof-lB-vxQ" secondAttribute="trailing" id="T8e-3A-EAe"/>
+                            <constraint firstItem="sof-lB-vxQ" firstAttribute="top" secondItem="XhV-ZS-gsx" secondAttribute="bottom" constant="8" id="ieS-zq-mFW"/>
+                            <constraint firstItem="h9J-7C-RrY" firstAttribute="leading" secondItem="XhV-ZS-gsx" secondAttribute="leading" id="jGL-bt-YHr"/>
+                            <constraint firstItem="h9J-7C-RrY" firstAttribute="trailing" secondItem="XhV-ZS-gsx" secondAttribute="trailing" id="mxk-dJ-M1Q"/>
+                            <constraint firstItem="5QJ-QX-cs6" firstAttribute="trailing" secondItem="XhV-ZS-gsx" secondAttribute="trailing" id="tiI-fn-BsO"/>
+                            <constraint firstItem="5QJ-QX-cs6" firstAttribute="bottom" secondItem="sof-lB-vxQ" secondAttribute="bottom" id="u2j-S7-KNy"/>
+                            <constraint firstItem="sof-lB-vxQ" firstAttribute="leading" secondItem="5QJ-QX-cs6" secondAttribute="leading" id="u6s-l7-2e7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5QJ-QX-cs6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="baritem" landscapeImage="baritem" id="tRg-dr-GsA"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="containerView" destination="sof-lB-vxQ" id="GaD-OX-31Y"/>
+                        <outletCollection property="buttons" destination="Ek9-3Y-sq2" collectionClass="NSMutableArray" id="xOK-nM-wPJ"/>
+                        <outletCollection property="buttons" destination="RXS-ku-6QG" collectionClass="NSMutableArray" id="0xx-3N-cSJ"/>
+                        <outletCollection property="buttons" destination="slX-5r-OVd" collectionClass="NSMutableArray" id="ArW-Vc-42a"/>
+                        <outletCollection property="buttons" destination="faA-Wr-RUe" collectionClass="NSMutableArray" id="ya5-1V-hZQ"/>
+                        <outletCollection property="buttons" destination="Nj3-zp-reg" collectionClass="NSMutableArray" id="tXQ-WW-k8z"/>
+                        <outletCollection property="buttons" destination="I13-MS-8w1" collectionClass="NSMutableArray" id="Jlp-qk-9Us"/>
+                        <outletCollection property="buttons" destination="wwf-7X-H8M" collectionClass="NSMutableArray" id="F3o-oL-xr7"/>
+                        <outletCollection property="buttons" destination="SBZ-oo-Crc" collectionClass="NSMutableArray" id="kh2-gM-ATX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uuu-Bx-7lI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-901" y="71"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baritem" width="24" height="28"/>
+    </resources>
+</document>
