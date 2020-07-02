@@ -17,69 +17,66 @@ class NewsFeedViewController: UIViewController {
     @IBOutlet var buttons: [UIButton]!
 
     private lazy var  topViewController: TopViewController = {
-        guard var viewController = UIStoryboard(name: "Top", bundle: Bundle.main).instantiateViewController(withIdentifier: "topVc") as?  TopViewController else {
-            return TopViewController()
+        if let viewController = UIStoryboard(name: "Top", bundle: Bundle.main).instantiateViewController(withIdentifier: "topVc") as? TopViewController {
+            return viewController
         }
-        return viewController
+        return TopViewController()
     }()
 
     private lazy var  entertainViewController: EntertainViewController = {
-        guard var viewController = UIStoryboard(name: "Entertain", bundle: Bundle.main).instantiateViewController(withIdentifier: "entertainVc") as? EntertainViewController else {
-            return EntertainViewController()
+        if let viewController = UIStoryboard(name: "Entertain", bundle: Bundle.main).instantiateViewController(withIdentifier: "entertainVc") as? EntertainViewController {
+            return viewController
         }
-        return viewController
+        return EntertainViewController()
     }()
 
     private lazy var  sportsViewController: SportsViewController = {
-        guard var viewController = UIStoryboard(name: "Sports", bundle: Bundle.main).instantiateViewController(withIdentifier: "sportsVc") as? SportsViewController else {
-            return SportsViewController()
+        if let viewController = UIStoryboard(name: "Sports", bundle: Bundle.main).instantiateViewController(withIdentifier: "sportsVc") as? SportsViewController {
+            return viewController
         }
-        return viewController
+        return SportsViewController()
     }()
 
     private lazy var  generalViewController: GeneralViewController = {
-        guard var viewController = UIStoryboard(name: "General", bundle: Bundle.main).instantiateViewController(withIdentifier: "generalVc") as? GeneralViewController else {
-            return GeneralViewController()
+        if let viewController = UIStoryboard(name: "General", bundle: Bundle.main).instantiateViewController(withIdentifier: "generalVc") as? GeneralViewController {
+            return viewController
         }
-        return viewController
+        return GeneralViewController()
     }()
 
     private lazy var  businessViewController: BusinessViewController = {
-        guard var viewController = UIStoryboard(name: "Business", bundle: Bundle.main).instantiateViewController(withIdentifier: "businessVc") as? BusinessViewController else {
-            return BusinessViewController()
+        if let viewController = UIStoryboard(name: "Business", bundle: Bundle.main).instantiateViewController(withIdentifier: "businessVc") as? BusinessViewController {
+            return viewController
         }
-        return viewController
+        return BusinessViewController()
     }()
 
     private lazy var  techViewController: TechViewController = {
-        guard var viewController = UIStoryboard(name: "Tech", bundle: Bundle.main).instantiateViewController(withIdentifier: "techVc") as? TechViewController else {
-            return TechViewController()
+        if let viewController = UIStoryboard(name: "Tech", bundle: Bundle.main).instantiateViewController(withIdentifier: "techVc") as? TechViewController {
+            return viewController
         }
-        return viewController
+        return TechViewController()
     }()
 
     private lazy var  scienceViewController: ScienceViewController = {
-        guard var viewController = UIStoryboard(name: "Science", bundle: Bundle.main).instantiateViewController(withIdentifier: "scienceVc") as? ScienceViewController else {
-            return ScienceViewController()
+        if let viewController = UIStoryboard(name: "Science", bundle: Bundle.main).instantiateViewController(withIdentifier: "scienceVc") as? ScienceViewController {
+            return viewController
         }
-        return viewController
+        return ScienceViewController()
     }()
 
     private lazy var  healthViewController: HealthViewController = {
-        guard var viewController = UIStoryboard(name: "Health", bundle: Bundle.main).instantiateViewController(withIdentifier: "healthVc") as? HealthViewController else {
-            return HealthViewController()
+        if let viewController = UIStoryboard(name: "Health", bundle: Bundle.main).instantiateViewController(withIdentifier: "healthVc") as? HealthViewController {
+            return viewController
         }
-        return viewController
+        return HealthViewController()
     }()
 
     // MARK: - Function
 
     @objc func clicked(_ selectedButton: UIButton) {
-        var viewController: UIViewController?
-        var index: Int?
-
-        index = selectedButton.tag
-        viewController = getController(forIndex: index!)!
+        let index = selectedButton.tag
+        let viewController = getController(forIndex: index)
 
         for button in buttons {
             button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
