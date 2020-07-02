@@ -8,13 +8,4 @@ target 'FreshNews' do
   # Pods for FreshNews
     pod 'SwiftLint'
 
-  target 'FreshNewsTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'FreshNewsUITests' do
-    # Pods for testing
-  end
-
 end

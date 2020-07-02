@@ -16,56 +16,56 @@ class NewsFeedViewController: UIViewController {
 
     @IBOutlet var buttons: [UIButton]!
 
-    private lazy var  topViewController: TopViewController = {
+    private lazy var topViewController: TopViewController = {
         if let viewController = UIStoryboard(name: "Top", bundle: Bundle.main).instantiateViewController(withIdentifier: "topVc") as? TopViewController {
             return viewController
         }
         return TopViewController()
     }()
 
-    private lazy var  entertainViewController: EntertainViewController = {
+    private lazy var entertainViewController: EntertainViewController = {
         if let viewController = UIStoryboard(name: "Entertain", bundle: Bundle.main).instantiateViewController(withIdentifier: "entertainVc") as? EntertainViewController {
             return viewController
         }
         return EntertainViewController()
     }()
 
-    private lazy var  sportsViewController: SportsViewController = {
+    private lazy var sportsViewController: SportsViewController = {
         if let viewController = UIStoryboard(name: "Sports", bundle: Bundle.main).instantiateViewController(withIdentifier: "sportsVc") as? SportsViewController {
             return viewController
         }
         return SportsViewController()
     }()
 
-    private lazy var  generalViewController: GeneralViewController = {
+    private lazy var generalViewController: GeneralViewController = {
         if let viewController = UIStoryboard(name: "General", bundle: Bundle.main).instantiateViewController(withIdentifier: "generalVc") as? GeneralViewController {
             return viewController
         }
         return GeneralViewController()
     }()
 
-    private lazy var  businessViewController: BusinessViewController = {
+    private lazy var businessViewController: BusinessViewController = {
         if let viewController = UIStoryboard(name: "Business", bundle: Bundle.main).instantiateViewController(withIdentifier: "businessVc") as? BusinessViewController {
             return viewController
         }
         return BusinessViewController()
     }()
 
-    private lazy var  techViewController: TechViewController = {
+    private lazy var techViewController: TechViewController = {
         if let viewController = UIStoryboard(name: "Tech", bundle: Bundle.main).instantiateViewController(withIdentifier: "techVc") as? TechViewController {
             return viewController
         }
         return TechViewController()
     }()
 
-    private lazy var  scienceViewController: ScienceViewController = {
+    private lazy var scienceViewController: ScienceViewController = {
         if let viewController = UIStoryboard(name: "Science", bundle: Bundle.main).instantiateViewController(withIdentifier: "scienceVc") as? ScienceViewController {
             return viewController
         }
         return ScienceViewController()
     }()
 
-    private lazy var  healthViewController: HealthViewController = {
+    private lazy var healthViewController: HealthViewController = {
         if let viewController = UIStoryboard(name: "Health", bundle: Bundle.main).instantiateViewController(withIdentifier: "healthVc") as? HealthViewController {
             return viewController
         }
