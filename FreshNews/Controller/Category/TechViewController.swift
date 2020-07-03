@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TechViewController: UITableViewController {
+class TechViewController: CategoryBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
