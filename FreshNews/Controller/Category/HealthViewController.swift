@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HealthViewController: UITableViewController {
+class HealthViewController: CategoryBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
