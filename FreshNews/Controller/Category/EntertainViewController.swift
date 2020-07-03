@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EntertainViewController: CategoryBaseTableViewController {
+class EntertainViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

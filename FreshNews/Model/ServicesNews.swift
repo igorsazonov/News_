@@ -10,13 +10,14 @@ import Foundation
 
 class ServicesNews {
     public static let shared = ServicesNews()
+    private var requestForNews = "https://newsapi.org/v2/top-headlines?country=us&"
     private let apiKey = "1b9cf9318a7a463e8158b7e35ac33a9b"
-    func loadNews(categoryNews: String, completionHandler: @escaping ([Article]) -> Void, errorHandler: @escaping (Error) -> Void) {
-        var requestForNews = "https://newsapi.org/v2/top-headlines?country=us&"
-        if categoryNews != "" {
+    func loadNews(categoryNews: String, searchArticle: String, completionHandler: @escaping ([Article]) -> Void, errorHandler: @escaping (Error) -> Void) {
+        if categoryNews == "" {
+            requestForNews.append("apiKey=\(apiKey)")
+        } else {
             requestForNews.append("category=\(categoryNews)&")
         }
-        requestForNews.append("apiKey=\(apiKey)")
         guard let urlNews = URL(string: requestForNews) else {return}
         let urlRequest = URLRequest(url: urlNews)
         let taske = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
@@ -29,6 +30,7 @@ class ServicesNews {
                 print(errorMessage!) // написать AlerrtController
                 return
             }
+            print(errorHandler)
             guard let data = data else {
                 DispatchQueue.main.async { // выполняем в общем потоке
                     errorHandler(NSError(domain: "", code: 0, userInfo: nil))

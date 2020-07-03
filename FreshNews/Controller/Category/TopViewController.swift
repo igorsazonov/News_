@@ -8,20 +8,32 @@
 
 import UIKit
 
-class TopViewController: CategoryBaseTableViewController {
-
+class TopViewController: UITableViewController {
+    var articles: [Article] = []
+    var activityIndicatorView = UIActivityIndicatorView()
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicatorView.startAnimating()
+        ServicesNews.shared.loadNews(categoryNews: "", searchArticle: "", completionHandler: { (articles) in
+            self.articles = articles
+            self.tableView.reloadData()
+        }, errorHandler: { (error) in
+            print(error)
+        })
         tableView.separatorStyle = .none
+        tableView.register(UINib(nibName: "NewsFeedTableViewCell", bundle: nil), forCellReuseIdentifier: "NewsFeedTableViewCell")
     }
-
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return self.articles.count
     }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NewsFeedTableViewCell", for: indexPath) as? NewsFeedTableViewCell
+        let article = articles[indexPath.row]
+        cell!.setupView(article: article)
+        return cell!
+    }
+    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let article = articles[indexPath.row]
+    }*/
 }
