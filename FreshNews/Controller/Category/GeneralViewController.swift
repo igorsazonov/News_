@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GeneralViewController: UITableViewController {
+class GeneralViewController: CategoryBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

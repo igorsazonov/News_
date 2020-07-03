@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BusinessViewController: UITableViewController {
+class BusinessViewController: CategoryBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

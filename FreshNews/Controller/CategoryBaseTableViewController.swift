@@ -1,20 +1,19 @@
 //
-//  TopViewController.swift
+//  BaseCategoryTableViewController.swift
 //  FreshNews
 //
-//  Created by Игорь Сазонов on 04.06.2020.
+//  Created by Игорь Сазонов on 03.07.2020.
 //  Copyright © 2020 Игорь Сазонов. All rights reserved.
 //
 
 import UIKit
 
-class TopViewController: CategoryBaseTableViewController {
-
+class CategoryBaseTableViewController: UITableViewController {
+    var serviceNews: ServicesNews! = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorStyle = .none
     }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

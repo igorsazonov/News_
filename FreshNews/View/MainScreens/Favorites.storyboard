@@ -30,17 +30,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Favorites" id="qNB-r9-W1t">
-                        <rightBarButtonItems>
-                            <barButtonItem image="doc.on.doc.fill" catalog="system" id="ySs-jl-dHB">
-                                <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <segue destination="QW7-nm-YmW" kind="presentation" id="KPf-zI-jyE"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Item" image="trash" catalog="system" id="WQw-Px-EHP">
-                                <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" image="doc.on.doc.fill" catalog="system" id="ySs-jl-dHB">
+                            <color key="tintColor" red="0.95294117647058818" green="0.68627450980392157" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="QW7-nm-YmW" kind="presentation" id="KPf-zI-jyE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NgZ-9J-2Ab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -87,6 +82,5 @@
     <resources>
         <image name="bookmark.fill" catalog="system" width="112" height="128"/>
         <image name="doc.on.doc.fill" catalog="system" width="117" height="128"/>
-        <image name="trash" catalog="system" width="121" height="128"/>
     </resources>
 </document>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SportsViewController: UITableViewController {
+class SportsViewController: CategoryBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
