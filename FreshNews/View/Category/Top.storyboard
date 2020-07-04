@@ -14,16 +14,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="218" id="wcT-4b-1zY" customClass="NewsFeedTableViewCell" customModule="FreshNews" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="218"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wcT-4b-1zY" id="SRi-ou-kCt">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="218"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="l9p-sQ-5in" id="zA1-Pa-ail"/>
                             <outlet property="delegate" destination="l9p-sQ-5in" id="h40-eo-BdD"/>
@@ -33,7 +23,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cND-wC-fHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-381.15942028985512" y="-503.57142857142856"/>
+            <point key="canvasLocation" x="839.13043478260875" y="-515.625"/>
         </scene>
     </scenes>
 </document>

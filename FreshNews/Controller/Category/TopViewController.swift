@@ -16,7 +16,9 @@ class TopViewController: UITableViewController {
         //activityIndicatorView.startAnimating()
         ServicesNews.shared.loadNews(categoryNews: "", searchArticle: "", completionHandler: { (articles) in
             self.articles = articles
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }, errorHandler: { (error) in
             self.callingTheAlertViewController(transmitMessages: error.localizedDescription)
         })
@@ -33,16 +35,19 @@ class TopViewController: UITableViewController {
         cell.setupView(article: article)
         return cell
     }
-    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let article = articles[indexPath.row]
-    }*/
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let articleViewController = UIStoryboard.init(name: "Article", bundle: Bundle.main).instantiateViewController(withIdentifier: "ArticleVc") as! ArticleViewController
+        self.navigationController?.pushViewController(articleViewController, animated: true)
+    }
 }
 
 extension UIViewController {
     func callingTheAlertViewController (transmitMessages message: String) {
-        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alert.addAction(okButton)
-        present(alert, animated: true)
+        alertController.addAction(okButton)
+        DispatchQueue.main.async {
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
 }

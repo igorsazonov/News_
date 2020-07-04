@@ -10,7 +10,7 @@
         <scene sceneID="TRP-bD-6NC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="16v-2F-x5I" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="qZW-uO-eft">
+                    <tabBarItem key="tabBarItem" image="magnifyingglass" catalog="system" id="qZW-uO-eft">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -64,4 +64,7 @@
             <point key="canvasLocation" x="1872" y="-761"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+    </resources>
 </document>

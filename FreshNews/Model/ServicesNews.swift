@@ -12,7 +12,7 @@ import UIKit
 class ServicesNews: UIViewController {
     public static let shared = ServicesNews()
     private var requestForNews = "https://newsapi.org/v2/top-headlines?country=us&"
-    private let apiKey = "1b9cf9318a7a463e8158b7e35ac33a9b"
+    private var apiKey = "1b9cf9318a7a463e8158b7e35ac33a9b"
     func loadNews(categoryNews: String, searchArticle: String, completionHandler: @escaping ([Article]) -> Void, errorHandler: @escaping (Error) -> Void) {
         if categoryNews.isEmpty {
             requestForNews.append("apiKey=\(apiKey)")

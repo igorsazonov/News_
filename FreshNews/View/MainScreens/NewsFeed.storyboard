@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rGI-s4-gGd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fPY-42-SRJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--News Feed View Controller-->
+        <!--News-->
         <scene sceneID="85l-Dy-8no">
             <objects>
                 <viewController id="rGI-s4-gGd" customClass="NewsFeedViewController" customModule="FreshNews" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhV-ZS-gsx">
-                                <rect key="frame" x="0.0" y="44" width="414" height="35"/>
+                                <rect key="frame" x="0.0" y="150" width="414" height="35"/>
                                 <subviews>
                                     <stackView contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="zAQ-uI-t7G">
                                         <rect key="frame" x="0.0" y="0.0" width="900" height="35"/>
@@ -141,32 +141,22 @@
                                 </constraints>
                             </scrollView>
                             <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sof-lB-vxQ">
-                                <rect key="frame" x="0.0" y="87" width="414" height="726"/>
+                                <rect key="frame" x="0.0" y="195" width="414" height="618"/>
                             </containerView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9J-7C-RrY">
-                                <rect key="frame" x="0.0" y="87" width="414" height="1"/>
-                                <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="ASK-Ei-xyz"/>
-                                </constraints>
-                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="XhV-ZS-gsx" firstAttribute="top" secondItem="5QJ-QX-cs6" secondAttribute="top" id="0g0-5W-AD6"/>
-                            <constraint firstItem="h9J-7C-RrY" firstAttribute="top" secondItem="sof-lB-vxQ" secondAttribute="top" id="Ifi-Pw-g1i"/>
+                            <constraint firstItem="XhV-ZS-gsx" firstAttribute="top" secondItem="5QJ-QX-cs6" secondAttribute="top" constant="10" id="0g0-5W-AD6"/>
                             <constraint firstItem="XhV-ZS-gsx" firstAttribute="leading" secondItem="5QJ-QX-cs6" secondAttribute="leading" id="MZQ-KR-wWW"/>
                             <constraint firstItem="5QJ-QX-cs6" firstAttribute="trailing" secondItem="sof-lB-vxQ" secondAttribute="trailing" id="T8e-3A-EAe"/>
-                            <constraint firstItem="sof-lB-vxQ" firstAttribute="top" secondItem="XhV-ZS-gsx" secondAttribute="bottom" constant="8" id="ieS-zq-mFW"/>
-                            <constraint firstItem="h9J-7C-RrY" firstAttribute="leading" secondItem="XhV-ZS-gsx" secondAttribute="leading" id="jGL-bt-YHr"/>
-                            <constraint firstItem="h9J-7C-RrY" firstAttribute="trailing" secondItem="XhV-ZS-gsx" secondAttribute="trailing" id="mxk-dJ-M1Q"/>
+                            <constraint firstItem="sof-lB-vxQ" firstAttribute="top" secondItem="XhV-ZS-gsx" secondAttribute="bottom" constant="10" id="ieS-zq-mFW"/>
                             <constraint firstItem="5QJ-QX-cs6" firstAttribute="trailing" secondItem="XhV-ZS-gsx" secondAttribute="trailing" id="tiI-fn-BsO"/>
                             <constraint firstItem="5QJ-QX-cs6" firstAttribute="bottom" secondItem="sof-lB-vxQ" secondAttribute="bottom" id="u2j-S7-KNy"/>
                             <constraint firstItem="sof-lB-vxQ" firstAttribute="leading" secondItem="5QJ-QX-cs6" secondAttribute="leading" id="u6s-l7-2e7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5QJ-QX-cs6"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="baritem" landscapeImage="baritem" id="tRg-dr-GsA"/>
+                    <navigationItem key="navigationItem" title="News" id="pJy-cu-vpf"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="containerView" destination="sof-lB-vxQ" id="GaD-OX-31Y"/>
@@ -182,10 +172,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uuu-Bx-7lI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-901" y="71"/>
+            <point key="canvasLocation" x="249.27536231884059" y="-127.23214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Rf-IG-fsV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fPY-42-SRJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="doc.plaintext" catalog="system" landscapeImage="doc.plaintext" id="tRg-dr-GsA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="deM-Uq-afB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rGI-s4-gGd" kind="relationship" relationship="rootViewController" id="ap9-VV-VAs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g12-Jo-ETZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-662.31884057971024" y="-127.23214285714285"/>
         </scene>
     </scenes>
     <resources>
-        <image name="baritem" width="24" height="28"/>
+        <image name="doc.plaintext" catalog="system" width="115" height="128"/>
     </resources>
 </document>

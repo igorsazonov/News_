@@ -11,7 +11,7 @@
             <objects>
                 <tableViewController id="NB3-Tf-EKf" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xrU-3f-g1b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -29,26 +29,11 @@
                             <outlet property="delegate" destination="NB3-Tf-EKf" id="zvw-f0-DuZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Favorites" id="qNB-r9-W1t">
-                        <barButtonItem key="rightBarButtonItem" image="doc.on.doc.fill" catalog="system" id="ySs-jl-dHB">
-                            <color key="tintColor" red="0.95294117647058818" green="0.68627450980392157" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="QW7-nm-YmW" kind="presentation" id="KPf-zI-jyE"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Favorites" id="qNB-r9-W1t"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NgZ-9J-2Ab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4076.811594202899" y="-662.27678571428567"/>
-        </scene>
-        <!--Article-->
-        <scene sceneID="8Lo-NQ-hlQ">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Article" id="QW7-nm-YmW" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hda-P7-SiE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4593" y="-662"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h63-5v-1Mt">
@@ -57,8 +42,8 @@
                     <tabBarItem key="tabBarItem" title="" image="bookmark.fill" catalog="system" landscapeImage="bookmark.fill" selectedImage="bookmark.fill" id="5Qi-Km-OGS"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="eha-mV-GD9">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="eha-mV-GD9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,6 +66,5 @@
     </scenes>
     <resources>
         <image name="bookmark.fill" catalog="system" width="112" height="128"/>
-        <image name="doc.on.doc.fill" catalog="system" width="117" height="128"/>
     </resources>
 </document>

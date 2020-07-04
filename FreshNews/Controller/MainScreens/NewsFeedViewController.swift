@@ -82,7 +82,7 @@ class NewsFeedViewController: UIViewController {
             button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         }
 
-        selectedButton.layer.backgroundColor = #colorLiteral(red: 0.9529411765, green: 0.6862745098, blue: 0.1333333333, alpha: 1)
+        selectedButton.layer.backgroundColor = #colorLiteral(red: 0.368627451, green: 0.3607843137, blue: 0.9019607843, alpha: 1) //#colorLiteral(red: 0.9529411765, green: 0.6862745098, blue: 0.1333333333, alpha: 1)
         add(asChildViewController: viewController!)
     }
 
@@ -114,7 +114,7 @@ class NewsFeedViewController: UIViewController {
                 button.layer.cornerRadius = 17
                 button.addTarget(self, action: #selector(clicked(_:)), for: UIControl.Event.touchUpInside)
             }
-            firstButton.layer.backgroundColor = #colorLiteral(red: 0.9529411765, green: 0.6862745098, blue: 0.1333333333, alpha: 1)
+            firstButton.layer.backgroundColor = #colorLiteral(red: 0.368627451, green: 0.3607843137, blue: 0.9019607843, alpha: 1)
         }
     }
     private func getController(forIndex index: Int) -> UIViewController? {
