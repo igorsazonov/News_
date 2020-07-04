@@ -37,6 +37,7 @@ class TopViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let articleViewController = UIStoryboard.init(name: "Article", bundle: Bundle.main).instantiateViewController(withIdentifier: "ArticleVc") as! ArticleViewController
+        articleViewController.article = articles[indexPath.item]
         self.navigationController?.pushViewController(articleViewController, animated: true)
     }
 }
