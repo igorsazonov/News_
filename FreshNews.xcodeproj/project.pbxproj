@@ -247,6 +247,24 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		F75CD87E24B12AAE00486B89 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F75CD87F24B12B1400486B89 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F7731040243F6159007CB5DE /* AppDelegate.swift */,
+				F780638624AE1AA700959394 /* SceneDelegate.swift */,
+				F7731049243F615D007CB5DE /* Assets.xcassets */,
+				F773104B243F615D007CB5DE /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		F7731034243F6159007CB5DE = {
 			isa = PBXGroup;
 			children = (
@@ -272,13 +290,11 @@
 		F773103F243F6159007CB5DE /* FreshNews */ = {
 			isa = PBXGroup;
 			children = (
+				F75CD87E24B12AAE00486B89 /* Extension */,
 				F773107C2440CCEE007CB5DE /* Model */,
 				F70D3671244B12030085FCF5 /* View */,
 				F730A0C0244B85F700DBB058 /* Controller */,
-				F7731040243F6159007CB5DE /* AppDelegate.swift */,
-				F780638624AE1AA700959394 /* SceneDelegate.swift */,
-				F7731049243F615D007CB5DE /* Assets.xcassets */,
-				F773104B243F615D007CB5DE /* LaunchScreen.storyboard */,
+				F75CD87F24B12B1400486B89 /* SupportingFiles */,
 				F773104E243F615D007CB5DE /* Info.plist */,
 			);
 			path = FreshNews;
