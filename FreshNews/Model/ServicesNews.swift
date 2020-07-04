@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
-class ServicesNews {
+class ServicesNews: UIViewController {
     public static let shared = ServicesNews()
     private var requestForNews = "https://newsapi.org/v2/top-headlines?country=us&"
     private let apiKey = "1b9cf9318a7a463e8158b7e35ac33a9b"
     func loadNews(categoryNews: String, searchArticle: String, completionHandler: @escaping ([Article]) -> Void, errorHandler: @escaping (Error) -> Void) {
-        if categoryNews == "" {
+        if categoryNews.isEmpty {
             requestForNews.append("apiKey=\(apiKey)")
         } else {
             requestForNews.append("category=\(categoryNews)&")
@@ -27,7 +28,8 @@ class ServicesNews {
             guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode >= 200 && httpResponse.statusCode < 300 else {
                 let httpResponse = response as? HTTPURLResponse
                 let errorMessage = httpResponse?.statusCode
-                print(errorMessage!) // написать AlerrtController
+                let message = String(errorMessage!) // написать AlerrtController
+                self.callingTheAlertViewController(transmitMessages: message)
                 return
             }
             print(errorHandler)
@@ -44,7 +46,7 @@ class ServicesNews {
                 }
             } catch {
                 let errorMessage = "Failed JSONDecoder"
-                print(errorMessage) // написать AlerrtController
+                self.callingTheAlertViewController(transmitMessages: errorMessage) // написать AlerrtController
                 return
             }
         }
