@@ -3,3 +3,4 @@ line_length:
 - 300 # error
 excluded: 
 - Pods
+force_cast: warning # implicitly
