@@ -16,7 +16,7 @@ class NewsFeedViewController: UIViewController {
 
     @IBOutlet var buttons: [UIButton]!
     
-    var categoryNews: String = ""
+    //var categoryNews: String = ""
 
     private lazy var topViewController: TopViewController = {
         if let viewController = UIStoryboard(name: "Top", bundle: Bundle.main).instantiateViewController(withIdentifier: "topVc") as? TopViewController {
@@ -78,7 +78,7 @@ class NewsFeedViewController: UIViewController {
 
     @objc func clicked(_ selectedButton: UIButton) {
         let indexButton = selectedButton.tag
-    
+        /*
         switch indexButton {
         case 0:
             categoryNews = ""
@@ -98,7 +98,7 @@ class NewsFeedViewController: UIViewController {
             categoryNews = "health"
         default:
              return
-        }
+        }*/
         
         let viewController = getController(forIndex: indexButton)
 
@@ -106,7 +106,7 @@ class NewsFeedViewController: UIViewController {
             button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         }
 
-        selectedButton.layer.backgroundColor = #colorLiteral(red: 0.368627451, green: 0.3607843137, blue: 0.9019607843, alpha: 1) //#colorLiteral(red: 0.9529411765, green: 0.6862745098, blue: 0.1333333333, alpha: 1)
+        selectedButton.layer.backgroundColor = #colorLiteral(red: 0.368627451, green: 0.3607843137, blue: 0.9019607843, alpha: 1)
         add(asChildViewController: viewController!)
     }
 

@@ -9,34 +9,35 @@
         <!--Sources-->
         <scene sceneID="w9R-AQ-ipN">
             <objects>
-                <tableViewController id="Clq-fu-zqV" sceneMemberID="viewController">
+                <tableViewController id="Clq-fu-zqV" customClass="SourcesTableViewController" customModule="FreshNews" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Iar-O2-3Pp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="152" id="qBZ-Oz-VtC">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SourceCell" rowHeight="152" id="KG2-Jk-dMB" customClass="SourceTableViewCell" customModule="FreshNews" customModuleProvider="target">
                                 <rect key="frame" x="20" y="55.5" width="374" height="152"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qBZ-Oz-VtC" id="1qE-qS-RCZ">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KG2-Jk-dMB" id="2mI-2K-mzh">
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="152"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bdshbfjdh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgv-m7-vQP">
-                                            <rect key="frame" x="33" y="29" width="78" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lafbdsbfhbdsjhfbel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVI-yf-vBc">
-                                            <rect key="frame" x="33" y="70" width="150" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Eg-8h-sWA">
+                                            <rect key="frame" x="20" y="22" width="334" height="99"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="7Eg-8h-sWA" secondAttribute="bottom" constant="20" id="LKh-dQ-vEs"/>
+                                        <constraint firstItem="7Eg-8h-sWA" firstAttribute="trailing" secondItem="2mI-2K-mzh" secondAttribute="trailingMargin" id="cm4-CW-WJP"/>
+                                        <constraint firstItem="7Eg-8h-sWA" firstAttribute="leading" secondItem="2mI-2K-mzh" secondAttribute="leadingMargin" id="dSO-Er-CWx"/>
+                                        <constraint firstItem="7Eg-8h-sWA" firstAttribute="top" secondItem="2mI-2K-mzh" secondAttribute="topMargin" constant="11" id="gvh-rx-p6M"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameSorceLabel" destination="7Eg-8h-sWA" id="mxT-Hr-fNS"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
