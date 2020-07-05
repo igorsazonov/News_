@@ -7,10 +7,22 @@
 //
 
 import UIKit
+/*
+enum categotyNews {
+    case Top
+    case Entertain
+    case Sports
+    case General
+    case Business
+    case Tech
+    case Science
+    case Health
+}*/
 
 class TopViewController: UITableViewController {
     var articles: [Article] = []
     let servicesNews = ServicesNews()
+    //let categoryNews: String = ""
     //var activityIndicatorView = UIActivityIndicatorView()
     override func viewDidLoad() {
         super.viewDidLoad()

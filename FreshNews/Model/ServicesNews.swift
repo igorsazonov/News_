@@ -15,8 +15,8 @@ class ServicesNews: UIViewController {
     func loadNews(categoryNews: String, searchArticle: String, completionHandler: @escaping ([Article]) -> Void, errorHandler: @escaping (Error) -> Void) {
         if categoryNews.isEmpty && searchArticle.isEmpty {
             requestForNews.append("apiKey=\(apiKey)")
-        } else if categoryNews != "" {
-            requestForNews.append("category=\(categoryNews)&")
+        } else if !categoryNews.isEmpty {
+            requestForNews.append("category=\(categoryNews)&apiKey=\(apiKey)")
         } else {
             requestForNews = "https://newsapi.org/v2/everything?q=\(searchArticle)&apiKey=\(apiKey)"
         }

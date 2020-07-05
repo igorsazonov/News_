@@ -9,32 +9,36 @@
 import UIKit
 
 class EntertainViewController: UITableViewController {
-
+    var articles: [Article] = []
+    let servicesNews = ServicesNews()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
+        servicesNews.loadNews(categoryNews: "entertainment", searchArticle: "", completionHandler: { (articles) in
+            self.articles = articles
+            self.tableView.reloadData()
+           }, errorHandler: { (error) in
+               self.callingTheAlertViewController(transmitMessages: error.localizedDescription)
+           })
+           tableView.separatorStyle = .none
+           tableView.register(UINib(nibName: "NewsFeedTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
+       }
+       // MARK: - Table view data source
+       override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+           return self.articles.count
+       }
+       override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+           let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! NewsFeedTableViewCell
+           let article = articles[indexPath.row]
+           cell.setupView(article: article)
+           return cell
+       }
+       override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           let articleViewController = UIStoryboard.init(name: "Article", bundle: Bundle.main).instantiateViewController(withIdentifier: "ArticleVc") as! ArticleViewController
+           articleViewController.article = articles[indexPath.item]
+           self.navigationController?.pushViewController(articleViewController, animated: true)
+       }
+    
 
     /*
     // Override to support conditional editing of the table view.
