@@ -234,8 +234,8 @@
 				F728BF6E248AAA190051D420 /* NewsFeedViewController.swift */,
 				F728BF73248B87860051D420 /* FavoritesViewController.swift */,
 				F728BF75248B87A40051D420 /* SearchViewController.swift */,
-				F7EE877724B0B26B00573A3C /* SourcesTableViewController.swift */,
 				F78CD2C424AF7A32009A9A0B /* ArticleViewController.swift */,
+				F7EE877724B0B26B00573A3C /* SourcesTableViewController.swift */,
 			);
 			path = MainScreens;
 			sourceTree = "<group>";
