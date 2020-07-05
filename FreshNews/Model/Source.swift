@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Source {
+struct Source: Codable {
     let id: String
     let name: String
     let description: String

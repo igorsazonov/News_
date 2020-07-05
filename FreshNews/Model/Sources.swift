@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Sources {
+struct Sources: Codable {
     let status: String
     let sources: [Source]
 }
