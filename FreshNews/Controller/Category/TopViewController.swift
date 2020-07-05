@@ -7,17 +7,6 @@
 //
 
 import UIKit
-/*
-enum categotyNews {
-    case Top
-    case Entertain
-    case Sports
-    case General
-    case Business
-    case Tech
-    case Science
-    case Health
-}*/
 
 class TopViewController: UITableViewController {
     var articles: [Article] = []
@@ -34,14 +23,14 @@ class TopViewController: UITableViewController {
             self.callingTheAlertViewController(transmitMessages: error.localizedDescription)
         })
         tableView.separatorStyle = .none
-        tableView.register(UINib(nibName: "NewsFeedTableViewCell", bundle: nil), forCellReuseIdentifier: "NewsFeedTableViewCell")
+        tableView.register(UINib(nibName: "NewsFeedTableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
     }
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.articles.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "NewsFeedTableViewCell", for: indexPath) as! NewsFeedTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! NewsFeedTableViewCell
         let article = articles[indexPath.row]
         cell.setupView(article: article)
         return cell

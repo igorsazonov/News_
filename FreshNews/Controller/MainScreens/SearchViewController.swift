@@ -22,10 +22,12 @@ class SearchViewController: UITableViewController {
         tableView.register(UINib(nibName: "NewsFeedTableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
         tableView.separatorStyle = .none
         definesPresentationContext = true
+        loadFeedSearch("")
     }
+    
     // MARK: - Search
     
-    func searchContent(_ searchArticle: String) {
+    func loadFeedSearch(_ searchArticle: String) {
         servicesNews.loadNews(categoryNews: "", searchArticle: searchArticle, completionHandler: { (articles) in
             self.articles = articles
             self.tableView.reloadData()
@@ -57,7 +59,7 @@ class SearchViewController: UITableViewController {
 extension SearchViewController: UISearchBarDelegate {
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         let searchBar = searchController.searchBar
-        searchContent(searchBar.text ?? "")
+        loadFeedSearch(searchBar.text ?? "")
         tableView.reloadData()
     }
 }
