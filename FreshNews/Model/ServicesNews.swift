@@ -10,14 +10,15 @@ import Foundation
 import UIKit
 
 class ServicesNews: UIViewController {
-    public static let shared = ServicesNews()
     private var requestForNews = "https://newsapi.org/v2/top-headlines?country=us&"
-    private var apiKey = "1b9cf9318a7a463e8158b7e35ac33a9b"
+    private let apiKey = "1b9cf9318a7a463e8158b7e35ac33a9b"
     func loadNews(categoryNews: String, searchArticle: String, completionHandler: @escaping ([Article]) -> Void, errorHandler: @escaping (Error) -> Void) {
-        if categoryNews.isEmpty {
+        if categoryNews.isEmpty && searchArticle.isEmpty {
             requestForNews.append("apiKey=\(apiKey)")
-        } else {
+        } else if categoryNews != "" {
             requestForNews.append("category=\(categoryNews)&")
+        } else {
+            requestForNews = "https://newsapi.org/v2/everything?q=\(searchArticle)&apiKey=\(apiKey)"
         }
         guard let urlNews = URL(string: requestForNews) else {return}
         let urlRequest = URLRequest(url: urlNews)

@@ -58,11 +58,11 @@
             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
             <viewLayoutGuide key="safeArea" id="5u0-K4-h9e"/>
             <connections>
-                <outlet property="articleImage" destination="orf-4e-Xsv" id="C4M-hP-YSd"/>
-                <outlet property="descriptionLabel" destination="m0c-ew-gYd" id="h8g-ji-H8g"/>
-                <outlet property="titleLabel" destination="Eao-cN-4pw" id="Jsw-I6-vFG"/>
+                <outlet property="articleImage" destination="orf-4e-Xsv" id="Bag-RP-lr4"/>
+                <outlet property="descriptionLabel" destination="m0c-ew-gYd" id="dKQ-7Y-wWl"/>
+                <outlet property="titleLabel" destination="Eao-cN-4pw" id="9JT-Hm-POj"/>
             </connections>
-            <point key="canvasLocation" x="-93" y="50"/>
+            <point key="canvasLocation" x="145" y="29"/>
         </tableViewCell>
     </objects>
     <resources>
