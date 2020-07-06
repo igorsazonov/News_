@@ -36,4 +36,13 @@ class SourcesTableViewController: UITableViewController {
         cell.loadSource(source: source)
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let swipeAddToFavorites = UIContextualAction(style: .normal, title: "") { (action, view, succes) in
+            print("favorites")
+        }
+        swipeAddToFavorites.backgroundColor = #colorLiteral(red: 0.368627451, green: 0.3607843137, blue: 0.9019607843, alpha: 1)
+        swipeAddToFavorites.image = #imageLiteral(resourceName: "favorites")
+        return UISwipeActionsConfiguration(actions: [swipeAddToFavorites])
+    }
 }
