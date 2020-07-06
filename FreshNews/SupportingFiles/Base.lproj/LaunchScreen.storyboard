@@ -16,12 +16,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JetRuby - Mobiles news reader-2" translatesAutoresizingMaskIntoConstraints="NO" id="XdM-uu-mit">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <rect key="frame" x="87" y="384" width="240" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="Vfd-MY-IcZ"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N62-aP-YtU">
                                 <rect key="frame" x="169" y="727" width="76" height="49"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="Sov-2J-eYj"/>
+                                    <constraint firstAttribute="height" constant="49" id="n7j-nZ-igm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -29,6 +32,9 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="igorSazonov" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvb-m2-nMA">
                                 <rect key="frame" x="152" y="755" width="110" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="8Fg-yz-1Gt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -36,24 +42,22 @@
                         </subviews>
                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="N62-aP-YtU" firstAttribute="centerX" secondItem="vG7-VO-bqO" secondAttribute="centerX" id="C9V-Mu-6ZM"/>
-                            <constraint firstItem="Zvb-m2-nMA" firstAttribute="leading" secondItem="FLC-5b-I8b" secondAttribute="leading" constant="152" id="EYT-Sq-2bc"/>
-                            <constraint firstItem="Zvb-m2-nMA" firstAttribute="top" secondItem="N62-aP-YtU" secondAttribute="bottom" constant="-21" id="Jk0-Ku-X1T"/>
-                            <constraint firstItem="Zvb-m2-nMA" firstAttribute="bottom" secondItem="FLC-5b-I8b" secondAttribute="bottom" constant="-65" id="Nuk-gX-IuD"/>
-                            <constraint firstItem="N62-aP-YtU" firstAttribute="centerX" secondItem="XdM-uu-mit" secondAttribute="centerX" id="RKM-Qi-EVe"/>
-                            <constraint firstItem="XdM-uu-mit" firstAttribute="top" secondItem="FLC-5b-I8b" secondAttribute="top" constant="340" id="TML-xs-RIP"/>
-                            <constraint firstItem="XdM-uu-mit" firstAttribute="leading" secondItem="FLC-5b-I8b" secondAttribute="leading" constant="87" id="Vs0-Sy-29D"/>
-                            <constraint firstItem="Zvb-m2-nMA" firstAttribute="centerX" secondItem="N62-aP-YtU" secondAttribute="centerX" id="idD-x6-5kG"/>
-                            <constraint firstItem="FLC-5b-I8b" firstAttribute="bottom" secondItem="N62-aP-YtU" secondAttribute="bottom" constant="86" id="oYv-4r-TyC"/>
-                            <constraint firstItem="N62-aP-YtU" firstAttribute="leading" secondItem="FLC-5b-I8b" secondAttribute="leading" constant="169" id="tEa-y3-gF9"/>
-                            <constraint firstItem="XdM-uu-mit" firstAttribute="centerY" secondItem="vG7-VO-bqO" secondAttribute="centerY" id="xEW-5K-ZxL"/>
+                            <constraint firstItem="XdM-uu-mit" firstAttribute="centerX" secondItem="vG7-VO-bqO" secondAttribute="centerX" id="31n-gF-GzW"/>
+                            <constraint firstItem="N62-aP-YtU" firstAttribute="leading" secondItem="FLC-5b-I8b" secondAttribute="leading" constant="169" id="4cc-bo-2Zb"/>
+                            <constraint firstItem="FLC-5b-I8b" firstAttribute="bottom" secondItem="Zvb-m2-nMA" secondAttribute="bottom" constant="65" id="I5f-vo-0o8"/>
+                            <constraint firstItem="Zvb-m2-nMA" firstAttribute="leading" secondItem="FLC-5b-I8b" secondAttribute="leading" constant="152" id="V84-bB-avd"/>
+                            <constraint firstItem="XdM-uu-mit" firstAttribute="leading" secondItem="FLC-5b-I8b" secondAttribute="leading" constant="87" id="Va7-eS-Crv"/>
+                            <constraint firstItem="N62-aP-YtU" firstAttribute="centerX" secondItem="Zvb-m2-nMA" secondAttribute="centerX" id="lRM-So-mKC"/>
+                            <constraint firstItem="XdM-uu-mit" firstAttribute="centerX" secondItem="N62-aP-YtU" secondAttribute="centerX" id="lmi-6p-STd"/>
+                            <constraint firstItem="XdM-uu-mit" firstAttribute="top" secondItem="FLC-5b-I8b" secondAttribute="top" constant="340" id="nJ4-7w-ayw"/>
+                            <constraint firstItem="FLC-5b-I8b" firstAttribute="bottom" secondItem="N62-aP-YtU" secondAttribute="bottom" constant="86" id="uQ2-Kw-vI9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FLC-5b-I8b"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FL9-Cu-Nk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-755" y="360"/>
+            <point key="canvasLocation" x="-755.07246376811599" y="359.59821428571428"/>
         </scene>
     </scenes>
     <resources>
