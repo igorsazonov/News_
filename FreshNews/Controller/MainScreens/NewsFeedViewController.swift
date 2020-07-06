@@ -121,6 +121,7 @@ class NewsFeedViewController: UIViewController {
             print("Error: viewController nil")
         }
     }
+    
     private func remove(asChildViewController viewController: UIViewController?) {
         if viewController != nil {
             viewController!.willMove(toParent: nil)
@@ -128,6 +129,7 @@ class NewsFeedViewController: UIViewController {
             viewController!.removeFromParent()
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if buttons.count > 0 {
@@ -141,6 +143,7 @@ class NewsFeedViewController: UIViewController {
             firstButton.layer.backgroundColor = #colorLiteral(red: 0.368627451, green: 0.3607843137, blue: 0.9019607843, alpha: 1)
         }
     }
+    
     private func getController(forIndex index: Int) -> UIViewController? {
         var viewController: UIViewController?
         switch index {
