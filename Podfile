@@ -7,5 +7,6 @@ target 'FreshNews' do
 
   # Pods for FreshNews
     pod 'SwiftLint'
+    pod 'Kingfisher', '~> 5.0'
 
 end

@@ -9,12 +9,14 @@
 import UIKit
 
 class NewsFeedViewController: UIViewController {
-
+    
     // MARK: - Variables
 
     @IBOutlet weak var containerView: UIView!
 
     @IBOutlet var buttons: [UIButton]!
+    
+    //var categoryNews: String = ""
 
     private lazy var topViewController: TopViewController = {
         if let viewController = UIStoryboard(name: "Top", bundle: Bundle.main).instantiateViewController(withIdentifier: "topVc") as? TopViewController {
@@ -75,14 +77,36 @@ class NewsFeedViewController: UIViewController {
     // MARK: - Function
 
     @objc func clicked(_ selectedButton: UIButton) {
-        let index = selectedButton.tag
-        let viewController = getController(forIndex: index)
+        let indexButton = selectedButton.tag
+        /*
+        switch indexButton {
+        case 0:
+            categoryNews = ""
+        case 1:
+            categoryNews = "entertainment"
+        case 2:
+            categoryNews = "sports"
+        case 3:
+            categoryNews = "general"
+        case 4:
+            categoryNews = "business"
+        case 5:
+            categoryNews = "technology"
+        case 6:
+            categoryNews = "science"
+        case 7:
+            categoryNews = "health"
+        default:
+             return
+        }*/
+        
+        let viewController = getController(forIndex: indexButton)
 
         for button in buttons {
             button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         }
 
-        selectedButton.layer.backgroundColor = #colorLiteral(red: 0.9529411765, green: 0.6862745098, blue: 0.1333333333, alpha: 1)
+        selectedButton.layer.backgroundColor = #colorLiteral(red: 0.368627451, green: 0.3607843137, blue: 0.9019607843, alpha: 1)
         add(asChildViewController: viewController!)
     }
 
@@ -97,6 +121,7 @@ class NewsFeedViewController: UIViewController {
             print("Error: viewController nil")
         }
     }
+    
     private func remove(asChildViewController viewController: UIViewController?) {
         if viewController != nil {
             viewController!.willMove(toParent: nil)
@@ -104,6 +129,7 @@ class NewsFeedViewController: UIViewController {
             viewController!.removeFromParent()
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if buttons.count > 0 {
@@ -114,9 +140,10 @@ class NewsFeedViewController: UIViewController {
                 button.layer.cornerRadius = 17
                 button.addTarget(self, action: #selector(clicked(_:)), for: UIControl.Event.touchUpInside)
             }
-            firstButton.layer.backgroundColor = #colorLiteral(red: 0.9529411765, green: 0.6862745098, blue: 0.1333333333, alpha: 1)
+            firstButton.layer.backgroundColor = #colorLiteral(red: 0.368627451, green: 0.3607843137, blue: 0.9019607843, alpha: 1)
         }
     }
+    
     private func getController(forIndex index: Int) -> UIViewController? {
         var viewController: UIViewController?
         switch index {
