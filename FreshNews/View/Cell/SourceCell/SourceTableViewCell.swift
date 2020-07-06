@@ -19,7 +19,6 @@ class SourceTableViewCell: UITableViewCell {
     }*/
     func loadSource(source: Source) {
         nameSorceLabel.text = source.name
-        //descriptionSourceLabel.text = source.description
+        descriptionSourceLabel.text = source.description
     }
-    // setSelected
 }

@@ -21,21 +21,31 @@
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="152"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Eg-8h-sWA">
-                                            <rect key="frame" x="20" y="22" width="334" height="99"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="NameSource" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Eg-8h-sWA">
+                                            <rect key="frame" x="20" y="22" width="334" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH1-BX-8eo">
+                                            <rect key="frame" x="20" y="65" width="334" height="56"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="7Eg-8h-sWA" secondAttribute="bottom" constant="20" id="LKh-dQ-vEs"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="RH1-BX-8eo" secondAttribute="bottom" constant="20" id="4Yl-XK-hBd"/>
+                                        <constraint firstItem="RH1-BX-8eo" firstAttribute="trailing" secondItem="2mI-2K-mzh" secondAttribute="trailingMargin" id="WUD-Lw-rs0"/>
+                                        <constraint firstItem="RH1-BX-8eo" firstAttribute="top" secondItem="7Eg-8h-sWA" secondAttribute="bottom" constant="21.5" id="aki-oE-DR1"/>
                                         <constraint firstItem="7Eg-8h-sWA" firstAttribute="trailing" secondItem="2mI-2K-mzh" secondAttribute="trailingMargin" id="cm4-CW-WJP"/>
                                         <constraint firstItem="7Eg-8h-sWA" firstAttribute="leading" secondItem="2mI-2K-mzh" secondAttribute="leadingMargin" id="dSO-Er-CWx"/>
                                         <constraint firstItem="7Eg-8h-sWA" firstAttribute="top" secondItem="2mI-2K-mzh" secondAttribute="topMargin" constant="11" id="gvh-rx-p6M"/>
+                                        <constraint firstItem="RH1-BX-8eo" firstAttribute="leading" secondItem="2mI-2K-mzh" secondAttribute="leadingMargin" id="yiz-9y-Sak"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="descriptionSourceLabel" destination="RH1-BX-8eo" id="eMh-ly-y6N"/>
                                     <outlet property="nameSorceLabel" destination="7Eg-8h-sWA" id="mxT-Hr-fNS"/>
                                 </connections>
                             </tableViewCell>
