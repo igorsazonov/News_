@@ -13,10 +13,12 @@ class SourceTableViewCell: UITableViewCell {
     @IBOutlet weak var nameSorceLabel: UILabel!
     
     @IBOutlet weak var descriptionSourceLabel: UILabel!
-    /*
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-    }*/
+        nameSorceLabel.textColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+    }
+    
     func loadSource(source: Source) {
         nameSorceLabel.text = source.name
         descriptionSourceLabel.text = source.description

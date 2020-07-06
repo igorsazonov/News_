@@ -12,11 +12,12 @@ class SearchViewController: UITableViewController {
     var articles: [Article] = []
     let servicesNews = ServicesNews()
     let searchController = UISearchController(searchResultsController: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchController.searchBar.delegate = self
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search"
+        searchController.searchBar.placeholder = "Search Articles"
         navigationItem.searchController = searchController
         navigationController?.navigationBar.prefersLargeTitles = true
         tableView.register(UINib(nibName: "NewsFeedTableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
