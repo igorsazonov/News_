@@ -38,9 +38,8 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKr-5s-oQN">
+                    <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKr-5s-oQN">
                         <rect key="frame" x="302" y="20" width="94" height="97"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="tintColor" red="0.36862745099999999" green="0.36078431370000003" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <state key="normal" image="bookmark" catalog="system"/>
                     </button>
@@ -50,9 +49,13 @@
                     <constraint firstAttribute="bottom" secondItem="orf-4e-Xsv" secondAttribute="bottom" constant="20" id="Pkp-ny-o6c"/>
                     <constraint firstItem="orf-4e-Xsv" firstAttribute="top" secondItem="xp0-6u-IKq" secondAttribute="top" constant="20" id="USc-hI-buZ"/>
                     <constraint firstItem="orf-4e-Xsv" firstAttribute="leading" secondItem="xp0-6u-IKq" secondAttribute="leading" constant="20" id="WYq-0k-kxr"/>
+                    <constraint firstAttribute="trailing" secondItem="KKr-5s-oQN" secondAttribute="trailing" constant="20" id="cEX-hE-eXX"/>
                     <constraint firstAttribute="trailing" secondItem="orf-4e-Xsv" secondAttribute="trailing" constant="20" id="ck0-cj-S75"/>
                     <constraint firstItem="Eao-cN-4pw" firstAttribute="leading" secondItem="xp0-6u-IKq" secondAttribute="leadingMargin" constant="17" id="h2C-DV-PWM"/>
+                    <constraint firstItem="KKr-5s-oQN" firstAttribute="leading" secondItem="xp0-6u-IKq" secondAttribute="leading" constant="302" id="jPN-ph-o9a"/>
+                    <constraint firstItem="KKr-5s-oQN" firstAttribute="top" secondItem="xp0-6u-IKq" secondAttribute="top" constant="20" id="mzK-ri-cO2"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Eao-cN-4pw" secondAttribute="trailing" constant="17" id="rxP-9x-Fi7"/>
+                    <constraint firstItem="Eao-cN-4pw" firstAttribute="top" secondItem="KKr-5s-oQN" secondAttribute="bottom" constant="27" id="z8D-ih-UGe"/>
                 </constraints>
             </tableViewCellContentView>
             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>

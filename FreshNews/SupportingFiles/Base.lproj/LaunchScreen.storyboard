@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JetRuby - Mobiles news reader-2" translatesAutoresizingMaskIntoConstraints="NO" id="XdM-uu-mit">
-                                <rect key="frame" x="87" y="384" width="240" height="148"/>
+                                <rect key="frame" x="87" y="344" width="240" height="148"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="148" id="Vfd-MY-IcZ"/>
                                 </constraints>
@@ -49,7 +49,7 @@
                             <constraint firstItem="XdM-uu-mit" firstAttribute="leading" secondItem="FLC-5b-I8b" secondAttribute="leading" constant="87" id="Va7-eS-Crv"/>
                             <constraint firstItem="N62-aP-YtU" firstAttribute="centerX" secondItem="Zvb-m2-nMA" secondAttribute="centerX" id="lRM-So-mKC"/>
                             <constraint firstItem="XdM-uu-mit" firstAttribute="centerX" secondItem="N62-aP-YtU" secondAttribute="centerX" id="lmi-6p-STd"/>
-                            <constraint firstItem="XdM-uu-mit" firstAttribute="top" secondItem="FLC-5b-I8b" secondAttribute="top" constant="340" id="nJ4-7w-ayw"/>
+                            <constraint firstItem="XdM-uu-mit" firstAttribute="top" secondItem="FLC-5b-I8b" secondAttribute="top" constant="300" id="nJ4-7w-ayw"/>
                             <constraint firstItem="FLC-5b-I8b" firstAttribute="bottom" secondItem="N62-aP-YtU" secondAttribute="bottom" constant="86" id="uQ2-Kw-vI9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FLC-5b-I8b"/>
