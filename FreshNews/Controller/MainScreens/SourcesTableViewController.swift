@@ -21,8 +21,7 @@ class SourcesTableViewController: UITableViewController {
         }, errorHandler: { (error) in
             self.callingTheAlertViewController(transmitMessages: error.localizedDescription)
         })
-        //tableView.separatorStyle = .none
-        //tableView.register(UINib(nibName: "SourceTableViewCell", bundle: nil), forCellReuseIdentifier: "SourceTableViewCell")
+        tableView.separatorStyle = .none
     }
 
     // MARK: - Table view data source

@@ -12,11 +12,9 @@ import UIKit
 class ServicesNews: UIViewController {
     // MARK: - Let and Var
     
-    
     private var requestForNews = "https://newsapi.org/v2/top-headlines?country=us&"
     private let apiKey = "1b9cf9318a7a463e8158b7e35ac33a9b"
     let requestForSourceNews = "https://newsapi.org/v2/sources?apiKey=1b9cf9318a7a463e8158b7e35ac33a9b"
-    
     
     // MARK: - Function
     
