@@ -27,4 +27,6 @@ class FavoritesViewController: UITableViewController {
 
         return cell
     }
+    
+    
 }

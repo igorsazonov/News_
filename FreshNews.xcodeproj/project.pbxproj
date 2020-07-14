@@ -360,8 +360,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7731067243F615D007CB5DE /* Build configuration list for PBXNativeTarget "FreshNews" */;
 			buildPhases = (
-				94CCF782B501475CBECBF010 /* [CP] Check Pods Manifest.lock */,
 				F755B11F24ABFFB00080CF9B /* ShellScript */,
+				94CCF782B501475CBECBF010 /* [CP] Check Pods Manifest.lock */,
 				F7731039243F6159007CB5DE /* Sources */,
 				F773103A243F6159007CB5DE /* Frameworks */,
 				F773103B243F6159007CB5DE /* Resources */,
